@@ -1,0 +1,45 @@
+:root {
+  --riviera-green: #245c2b;
+  --riviera-gold: #b38a50;
+  --header-height: 15vh;
+  --content-height: 100vh;
+  --footer-height: 1vh;
+}
+
+#content {
+  background-color: beige;
+}
+
+header {
+  height: var(--header-height);
+  padding: 2rem;
+  background-color: white;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+
+nav {
+  margin-top: 2rem;
+  display: flex;
+}
+
+.nav > ul {
+  align-self: center;
+  display: flex;
+  gap: 2rem;
+}
+
+main {
+  height: calc(var(--content-height) - calc(var(--header-height) + var(--footer-height)));
+  background-color: #245c2b;
+}
+
+footer {
+  background-color: white;
+  height: var(--footer-height);
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
