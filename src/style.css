@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+:root {
+  background-color: #fff;
+  color: #ffffff;
+  box-sizing: border-box;
+  font-family: 'Amatic Sc', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #3C6E71;
+  padding: 2rem;
+  max-height: 100%;
+}
+
+.top-nav {
+  font-size: 1.7rem;
+  text-align: center;
+  vertical-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+[data-active] {
+  color: #FFF952;
+  font-size: 2rem;
+}
+
+ul{
+  list-style: none;
+  display: flex;
+  gap: 5vw;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Amatic Sc';
+}
+
+main {
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+
+}
+
+.title {
+  font-family: 'Amatic Sc', cursive;
+  font-size: 4em;
+  font-weight: bold;
+  margin: 1rem;
+}
+
+.headline {
+  width: 40rem;
+  text-align: justify;
+  margin: 2rem 0;
+}
+
+.hours {
+  width: 40rem;
+  text-align: center;
+}
+
+.hours>h3 {
+  font-size: 3rem;
+  margin: 1rem 0;
+  font-weight: 700;
+}
+.image>img {
+  width: 30rem;
+  height: 30rem;
+  margin: 1rem 0;
+  background-size: cover;
+  outline: white 10px auto;
+  border-radius: 50%;
+}
+
+footer {
+  font-size: 1rem;
+  margin: 0;
+}
