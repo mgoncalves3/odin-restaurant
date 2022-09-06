@@ -9,12 +9,15 @@
 
 body {
   background-color: #3C6E71;
-  padding: 2rem;
-  max-height: 100%;
+  padding: 0;
+  height: 100%;
 }
 
 #content {
   height: 100%;
+  width: 40rem;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 .navigation {
@@ -24,7 +27,6 @@ body {
 .top-nav {
   font-size: 1.7rem;
   text-align: center;
-  vertical-align: center;
 }
 
 a {
@@ -53,9 +55,7 @@ main {
   justify-content: center;
   align-items: center;
   font-size: 1.7rem;
-  min-height: 70%;
   height: 70%;
-
 }
 
 .title {
@@ -66,7 +66,7 @@ main {
 }
 
 .headline {
-  width: 40rem;
+  width: 30rem;
   text-align: justify;
   margin: 2rem 0;
 }
