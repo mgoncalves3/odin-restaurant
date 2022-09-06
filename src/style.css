@@ -13,6 +13,14 @@ body {
   max-height: 100%;
 }
 
+#content {
+  height: 100%;
+}
+
+.navigation {
+  height: 20%;
+}
+
 .top-nav {
   font-size: 1.7rem;
   text-align: center;
@@ -45,6 +53,8 @@ main {
   justify-content: center;
   align-items: center;
   font-size: 1.7rem;
+  min-height: 70%;
+  height: 70%;
 
 }
 
@@ -83,4 +93,5 @@ main {
 footer {
   font-size: 1rem;
   margin: 0;
+  height: 10%;
 }
