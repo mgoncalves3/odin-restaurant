@@ -34,7 +34,7 @@ a {
   color: #ffffff;
 }
 
-[data-active] {
+.active {
   color: #FFF952;
   font-size: 2rem;
 }
