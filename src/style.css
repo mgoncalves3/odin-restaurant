@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
 
 :root {
   background-color: #fff;
   color: #ffffff;
   box-sizing: border-box;
-  font-family: 'Amatic Sc', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Amatic Sc", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-  background-color: #3C6E71;
+  background-color: #3c6e71;
   padding: 0;
   height: 100%;
 }
@@ -35,17 +35,17 @@ a {
 }
 
 .active {
-  color: #FFF952;
+  color: #fff952;
   font-size: 2rem;
 }
 
-ul{
+ul {
   list-style: none;
   display: flex;
   gap: 5vw;
   justify-content: center;
   text-align: center;
-  font-family: 'Amatic Sc';
+  font-family: "Amatic Sc";
 }
 
 main {
@@ -59,7 +59,7 @@ main {
 }
 
 .title {
-  font-family: 'Amatic Sc', cursive;
+  font-family: "Amatic Sc", cursive;
   font-size: 4em;
   font-weight: bold;
   margin: 1rem;
@@ -76,12 +76,12 @@ main {
   text-align: center;
 }
 
-.hours>h3 {
+.hours > h3 {
   font-size: 3rem;
   margin: 1rem 0;
   font-weight: 700;
 }
-.image>img {
+.image > img {
   width: 30rem;
   height: 30rem;
   margin: 1rem 0;
@@ -94,4 +94,5 @@ footer {
   font-size: 1rem;
   margin: 0;
   height: 10%;
+  text-align: center;
 }
