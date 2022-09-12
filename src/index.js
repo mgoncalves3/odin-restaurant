@@ -1,20 +1,32 @@
-import './reset.css';
-import './style.css';
-import * as nav from './nav.js';
-import * as main from './main_content.js';
-import * as footer from './footer.js';
+import "./reset.css";
+import "./style.css";
+import * as home from "./home.js";
 
-const content = document.querySelector('#content');
+const content = document.querySelector("#content");
+const links = document.getElementsByClassName("button");
+
+home.load();
+
 
 function resetMain() {
-  let mainDiv = document.querySelector('main');
+  let mainDiv = document.querySelector("main");
   (function deleteElements() {
     while (mainDiv.hasChildNodes()) {
-      mainDiv.removeChild(mainDiv.lastChild)
-    };
+      mainDiv.removeChild(mainDiv.lastChild);
+    }
   })();
-};
+}
 
-content.appendChild(nav.load());
-content.appendChild(main.load());
-content.appendChild(footer.load())
+
+
+for (let button of links) {
+  button.addEventListener("click", () => {
+    for (let activeBtn of links) {
+      if (activeBtn.classList.contains("active")) {
+        activeBtn.classList.toggle("active");
+      }
+    }
+
+    button.classList.toggle("active");
+  });
+}
