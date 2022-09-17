@@ -1,10 +1,10 @@
 import imgSrc from "./classic-tuna-melt.jpg";
 
-export function load() {
-  let content = document.querySelector("#content");
+let content = document.querySelector("#content");
 
+export function pageDefault() {
   function navigation() {
-    let navItems = ["Home", "Our Sandwiches", "Where are we", "Contacts"];
+    let navItems = ["Home", "Our Sandwiches", "Contacts"];
 
     let nav = document.createElement("nav");
     nav.classList.add("navigation");
@@ -15,7 +15,7 @@ export function load() {
     navItems.forEach((item) => {
       let x = document.createElement("li");
       let anchor = document.createElement("a");
-      anchor.classList.add('button');
+      anchor.classList.add("button");
       anchor.href = "#";
       anchor.innerText = item;
 
@@ -26,11 +26,25 @@ export function load() {
       list.appendChild(x);
     });
     nav.appendChild(list);
+    content.appendChild(nav);
     return nav;
   }
+  function footer() {
+    let foot = document.createElement("footer");
+    foot.innerHTML = `2022 - &copy; Marco Gonçalves`;
+    content.appendChild(foot);
+    return foot;
+  }
 
-  function mainContent() {
-    let main = document.createElement("main");
+  content.appendChild(navigation());
+  content.appendChild(footer());
+}
+
+
+export function main() {
+  let main = document.createElement("main");
+  let mainDiv = document.getElementById('main');
+  main.id = 'main';
 
     function title() {
       let div = document.createElement("div");
@@ -67,21 +81,16 @@ export function load() {
       return div;
     }
 
-    main.appendChild(title());
-    main.appendChild(image());
-    main.appendChild(headline());
+    if (!mainDiv) {
+      main.appendChild(title());
+      main.appendChild(image());
+      main.appendChild(headline());
+  
+      return main;
+    }
 
-    return main;
+    mainDiv.appendChild(title());
+    mainDiv.appendChild(image());
+    mainDiv.appendChild(headline());
+   return mainDiv; 
   }
-
-  function footer() {
-    let foot = document.createElement("footer");
-    foot.innerHTML = `2022 - &copy; Marco Gonçalves`;
-
-    return foot;
-  }
-
-  content.appendChild(navigation());
-  content.appendChild(mainContent());
-  content.appendChild(footer());
-}
